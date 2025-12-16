@@ -42,7 +42,7 @@ h3,
   pointer-events: none;
   z-index: 9999;
   opacity: 0.05;
-  background: url('/assets/noise.svg');
+  background: url('/dopamine_cutter_landing/assets/noise.svg');
   animation: noise 0.2s infinite;
 }
 
