@@ -2,7 +2,6 @@
 import React from "react";
 import { LanguageProvider } from "@/context/LanguageContext";
 import SmoothScroll from "@/components/ui/SmoothScroll";
-import Cursor from "@/components/ui/Cursor";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
 import Marquee from "@/components/home/Marquee";
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <LanguageProvider>
       <SmoothScroll>
-        <Cursor />
         <Navbar />
         <main>
           <Hero />

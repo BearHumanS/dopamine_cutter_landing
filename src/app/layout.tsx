@@ -3,6 +3,7 @@ import { Space_Grotesk, Syne, Noto_Sans_KR } from "next/font/google";
 import "@mantine/core/styles.css";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
+import Cursor from "@/components/ui/Cursor";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -103,6 +104,7 @@ export default function RootLayout({
       <body className="antialiased selection:bg-[#ccff00] selection:text-black">
         <div className="bg-gradient-mesh" />
         <MantineProvider theme={theme} defaultColorScheme="dark">
+          <Cursor />
           {children}
         </MantineProvider>
       </body>
