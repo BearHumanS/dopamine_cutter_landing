@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useRef, useState } from "react";
+import { Canvas, useFrame, ThreeElements } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
@@ -16,8 +16,8 @@ export default function Hero3D() {
     );
 }
 
-function ParticleCloud(props: any) {
-    const ref = useRef<THREE.Points>(null!);
+function ParticleCloud(props: ThreeElements['points']) {
+    const ref = useRef<any>(null);
     const [sphere] = useState(() => randomInSphere(6000, 1.3));
 
     useFrame((state, delta) => {
