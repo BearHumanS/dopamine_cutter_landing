@@ -7,7 +7,7 @@ export default function CTA() {
     return (
         <section className="h-screen flex items-center justify-center relative overflow-hidden bg-[#050505] text-white">
             {/* Background Gradient */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-800/20 via-[#050505] to-[#050505]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#ccff00]/20 via-[#050505] to-[#050505] blur-3xl"></div>
 
             <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
                 <h2 className="display-font text-5xl md:text-7xl font-bold mb-8">
