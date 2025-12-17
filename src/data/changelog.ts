@@ -14,6 +14,25 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.1.5",
+        date: "2025-12-18",
+        title: {
+            en: "Quotes & Timer Rhythm",
+            ko: "집중 시간과 하나가 된 명언"
+        },
+        description: {
+            en: [
+                "Synced with Focus Timer: Quotes now update exactly when the timer minute changes.",
+                "Visual Progress: A progress bar below the quote card tracks the remaining seconds."
+            ],
+            ko: [
+                "타이머 동기화: 타이머의 '분' 숫자가 바뀔 때마다(예: 25분 -> 24분) 명언도 함께 교체됩니다.",
+                "시각화: 명언 카드 아래의 바(Bar)가 남은 '초'에 맞춰 줄어듭니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.1.4",
         date: "2025-12-17",
         title: {
