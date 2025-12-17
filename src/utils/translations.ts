@@ -3,7 +3,7 @@ export type Language = 'en' | 'ko';
 export const translations = {
     en: {
         nav_cta: "Add to Chrome",
-        hero_status: "System Overload Detected",
+        hero_status: "Dopamine Overload Detected",
         hero_w1: "Escape",
         hero_w2: "The",
         hero_w3: "Loop",
@@ -40,7 +40,7 @@ export const translations = {
     },
     ko: {
         nav_cta: "크롬에 추가",
-        hero_status: "시스템 과부하 감지됨",
+        hero_status: "도파민 과부하 감지됨",
         hero_w1: "Escape",
         hero_w2: "The",
         hero_w3: "Loop",
