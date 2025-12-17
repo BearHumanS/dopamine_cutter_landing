@@ -70,9 +70,6 @@ export const metadata: Metadata = {
   verification: {
     google: "OwiHh7_fFofvyDdZLvIbIoKoVI8Dfp_7Yp7hbTtMFvA",
   },
-  icons: {
-    icon: "/dopamine_cutter_landing/favicon.ico",
-  },
 };
 
 const theme = createTheme({
