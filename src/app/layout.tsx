@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Dopamine Cutter",
     images: [
       {
-        url: "/og-image.png",
+        url: "/dopamine_cutter_landing/og-image.png",
         width: 1200,
         height: 630,
         alt: "Dopamine Cutter - Reclaim Your Brain",
@@ -64,14 +64,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dopamine Cutter | Reclaim Your Brain",
     description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span.",
-    images: ["/og-image.png"],
+    images: ["/dopamine_cutter_landing/og-image.png"],
     creator: "@dopaminecutter",
   },
   verification: {
     google: "OwiHh7_fFofvyDdZLvIbIoKoVI8Dfp_7Yp7hbTtMFvA",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/dopamine_cutter_landing/favicon.ico",
   },
 };
 

@@ -27,12 +27,12 @@ export default function Hero() {
     return (
         <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden pb-32">
             {/* Background */}
-            <div className="absolute inset-0 z-0 opacity-20">
+            <div className="absolute inset-0 z-0 opacity-40">
                 <Image
                     src="/dopamine_cutter_landing/assets/hero-noise.jpg"
                     alt="Static Noise"
                     fill
-                    className="object-cover grayscale brightness-50"
+                    className="object-cover grayscale brightness-75"
                     priority
                 />
             </div>
