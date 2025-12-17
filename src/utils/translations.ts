@@ -37,7 +37,9 @@ export const translations = {
         cta_btn: "Install Extension Free",
         footer: "&copy; 2025 Dopamine Cutter. Designed for Focus.",
         privacy: "Privacy Policy",
-        updates: "Updates"
+        updates: "Updates",
+        changelog_title: "SYSTEM UPDATES",
+        changelog_desc: "Tracking the evolution of the protocol. System upgrades, bug patches, and new modules."
     },
     ko: {
         nav_cta: "크롬에 추가",
@@ -75,6 +77,8 @@ export const translations = {
         cta_btn: "Install Extension Free",
         footer: "&copy; 2025 Dopamine Cutter. Designed for Focus.",
         privacy: "개인정보처리방침",
-        updates: "업데이트"
+        updates: "업데이트",
+        changelog_title: "시스템 업데이트",
+        changelog_desc: "프로토콜의 진화를 기록합니다. 시스템 업그레이드, 버그 수정, 그리고 새로운 모듈."
     }
 };
