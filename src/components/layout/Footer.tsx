@@ -1,5 +1,6 @@
 "use client";
 import { useLanguage } from "@/context/LanguageContext";
+import Link from "next/link";
 
 export default function Footer() {
     const { t } = useLanguage();
@@ -15,6 +16,13 @@ export default function Footer() {
             >
                 {t("privacy")}
             </a>
+            <span className="hidden md:inline text-gray-800">|</span>
+            <Link
+                href="/changelog"
+                className="hover:text-white transition-colors underline underline-offset-4"
+            >
+                {t("updates")}
+            </Link>
         </footer>
     );
 }

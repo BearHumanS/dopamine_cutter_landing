@@ -36,7 +36,8 @@ export const translations = {
         cta_desc: "Stop spending it on algorithms. Invest it in yourself.",
         cta_btn: "Install Extension Free",
         footer: "&copy; 2025 Dopamine Cutter. Designed for Focus.",
-        privacy: "Privacy Policy"
+        privacy: "Privacy Policy",
+        updates: "Updates"
     },
     ko: {
         nav_cta: "크롬에 추가",
@@ -73,6 +74,7 @@ export const translations = {
         cta_desc: "알고리즘에 낭비하지 마세요. 당신 자신에게 투자하세요.",
         cta_btn: "Install Extension Free",
         footer: "&copy; 2025 Dopamine Cutter. Designed for Focus.",
-        privacy: "개인정보처리방침"
+        privacy: "개인정보처리방침",
+        updates: "업데이트"
     }
 };
