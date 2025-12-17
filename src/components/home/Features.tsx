@@ -107,7 +107,7 @@ function FeatureItem({ icon, title, desc }: { icon: any, title: string, desc: st
 const BadUIMockup = () => (
     <div className="w-full h-full relative bg-[#0a0a0a]">
         <Image
-            src="/assets/ui-distraction.png"
+            src="/dopamine_cutter_landing/assets/ui-distraction.png"
             alt="Distracting UI"
             fill
             className="object-cover opacity-80"
@@ -120,7 +120,7 @@ const BadUIMockup = () => (
 const GoodUIMockup = () => (
     <div className="w-full h-full flex items-center justify-center bg-black relative">
         <Image
-            src="/assets/ui-focus.png"
+            src="/dopamine_cutter_landing/assets/ui-focus.png"
             alt="Focused UI"
             fill
             className="object-cover opacity-90"
