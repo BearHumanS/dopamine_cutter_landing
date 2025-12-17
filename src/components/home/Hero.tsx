@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import { Scissors } from "lucide-react";
 import Image from "next/image";
 import GlitchText from "@/components/ui/GlitchText";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+// Dynamically import 3D component to avoid SSR issues
+const Hero3D = dynamic(() => import("./Hero3D"), { ssr: false });
 
 export default function Hero() {
     const { t } = useLanguage();
@@ -26,8 +31,15 @@ export default function Hero() {
 
     return (
         <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden pb-32">
-            {/* Background */}
-            <div className="absolute inset-0 z-0 opacity-40">
+            {/* Background 3D Effect */}
+            <Suspense fallback={<div className="absolute inset-0 bg-[#050505]" />}>
+                <div className="absolute inset-0 z-0 animate-in fade-in duration-1000">
+                    <Hero3D />
+                </div>
+            </Suspense>
+
+            {/* Static Backup (Optional - keeping commented out just in case) */}
+            {/* <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
                 <Image
                     src="/dopamine_cutter_landing/assets/hero-noise.jpg"
                     alt="Static Noise"
@@ -35,10 +47,10 @@ export default function Hero() {
                     className="object-cover grayscale brightness-75"
                     priority
                 />
-            </div>
+            </div> */}
 
-            <div className="z-10 text-center px-4 relative">
-                <div className="mb-6">
+            <div className="z-10 text-center px-4 relative pointer-events-none">
+                <div className="mb-6 pointer-events-auto">
                     <GlitchText
                         text={t("hero_status")}
                         className="text-[#ff2a2a] tracking-[0.5em] text-xs font-bold uppercase"
@@ -78,7 +90,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.5, duration: 1 }}
-                    className="hero-sub max-w-md mx-auto text-gray-400 mt-8 break-keep"
+                    className="hero-sub max-w-md mx-auto text-gray-400 mt-8 break-keep pointer-events-auto"
                 >
                     {t("hero_sub")}
                 </motion.p>
@@ -87,7 +99,7 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 1 }}
-                    className="mt-12"
+                    className="mt-12 pointer-events-auto"
                 >
                     <a
                         href="https://chromewebstore.google.com/detail/dopamine-cutter-block-sho/lcjgndamdhkddnncjpfallkgdanpeeka?utm_source=landing_page"
@@ -101,7 +113,7 @@ export default function Hero() {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 z-20">
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 z-20 pointer-events-none">
                 <span className="text-[10px] uppercase tracking-widest">{t("scroll_text")}</span>
                 <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
             </div>
