@@ -24,12 +24,7 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bearhumans.github.io/dopamine_cutter_landing/'),
-  // Wait, I don't know the final domain. I will use a placeholder or ask user?
-  // User asked for "deploying to GitHub Pages" previously. 
-  // I will use a generic one or try to infer.
-  // Actually, I'll use a placeholder variable or just omit metadataBase if not strictly required, but next.js warns about it. 
-  // Let's use a standard implementation.
+  metadataBase: new URL('https://bearhumans.github.io'),
   title: {
     default: "Dopamine Cutter | Reclaim Your Brain",
     template: "%s | Dopamine Cutter",
@@ -53,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Dopamine Cutter",
     images: [
       {
-        url: "/dopamine_cutter_landing/og-image.png",
+        url: "https://bearhumans.github.io/dopamine_cutter_landing/og-image.png",
         width: 1200,
         height: 630,
         alt: "Dopamine Cutter - Reclaim Your Brain",
@@ -64,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dopamine Cutter | Reclaim Your Brain",
     description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span.",
-    images: ["/dopamine_cutter_landing/og-image.png"],
+    images: ["https://bearhumans.github.io/dopamine_cutter_landing/og-image.png"],
     creator: "@dopaminecutter",
   },
   verification: {

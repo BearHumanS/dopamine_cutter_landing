@@ -46,7 +46,7 @@ export const translations = {
         hero_w3: "Loop",
         hero_sub: "둠스크롤링을 멈추세요. 쇼츠를 차단하고, 집중력을 되찾으세요.",
         hero_btn: "도파민 차단하기",
-        scroll_text: "스크롤하여 해독하기",
+        scroll_text: "Scroll to Detox",
         marquee_chaos: "낭비된 시간 불안 혼란 소음 산만함 낭비된 시간",
         feature_title_1: "명료함을",
         feature_title_2: "되찾다.",
@@ -71,8 +71,8 @@ export const translations = {
         cta_title_1: "당신의 관심은 곧",
         cta_title_2: "화폐입니다.",
         cta_desc: "알고리즘에 낭비하지 마세요. 당신 자신에게 투자하세요.",
-        cta_btn: "무료 확장프로그램 설치",
-        footer: "&copy; 2025 도파민 커터. 몰입을 위해 디자인됨.",
+        cta_btn: "Install Extension Free",
+        footer: "&copy; 2025 Dopamine Cutter. Designed for Focus.",
         privacy: "개인정보처리방침"
     }
 };
