@@ -16,7 +16,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
 
     return (
         <ReactLenis root options={options}>
-            {/* @ts-ignore */}
+            {/* @ts-expect-error type incompatibility in lenis */}
             {children}
         </ReactLenis>
     );

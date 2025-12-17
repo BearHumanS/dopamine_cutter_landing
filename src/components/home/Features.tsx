@@ -1,7 +1,7 @@
 "use client";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion } from "framer-motion";
-import { Ban, EyeOff, MessageSquareOff, Zap, Play } from "lucide-react";
+import { Ban, EyeOff, MessageSquareOff } from "lucide-react";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -84,7 +84,7 @@ export default function Features() {
     );
 }
 
-function FeatureItem({ icon, title, desc }: { icon: any, title: string, desc: string }) {
+function FeatureItem({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
     return (
         <motion.li
             initial={{ opacity: 0, x: -20 }}
