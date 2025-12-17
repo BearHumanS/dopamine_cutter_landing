@@ -1,6 +1,7 @@
 "use client";
 import { useLanguage } from "@/context/LanguageContext";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
     const { language, setLanguage, t } = useLanguage();
@@ -29,6 +30,13 @@ export default function Navbar() {
                         KO
                     </button>
                 </div>
+
+                <Link
+                    href="/changelog"
+                    className="hidden md:block text-sm font-medium hover:text-[#ccff00] transition-colors interactable"
+                >
+                    {t("updates")}
+                </Link>
 
                 <a
                     href="https://chromewebstore.google.com/detail/dopamine-cutter-block-sho/lcjgndamdhkddnncjpfallkgdanpeeka?utm_source=landing_page"
