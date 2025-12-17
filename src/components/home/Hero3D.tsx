@@ -17,6 +17,7 @@ export default function Hero3D() {
 }
 
 function ParticleCloud(props: ThreeElements['points']) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const ref = useRef<any>(null);
     const [sphere] = useState(() => randomInSphere(6000, 1.3));
 
@@ -34,6 +35,7 @@ function ParticleCloud(props: ThreeElements['points']) {
 
     return (
         <group rotation={[0, 0, Math.PI / 4]}>
+            {/* @ts-expect-error - ref type mismatch with R3F types */}
             <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
                 <PointMaterial
                     transparent
