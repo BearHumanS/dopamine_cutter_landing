@@ -15,8 +15,8 @@ export default function Marquee() {
     const x2 = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]); // Adjusted speed
 
     return (
-        <section ref={ref} className="py-20 bg-[#0a0a0a] border-y border-white/10 relative overflow-hidden">
-            <div className="noise-overlay absolute inset-0 bg-red-900/10 blur-3xl"></div>
+        <section ref={ref} className="noise-overlay py-20 bg-[#0a0a0a] border-y border-white/10 relative overflow-hidden">
+            <div className="absolute inset-0 bg-red-900/10 blur-3xl"></div>
 
             <div className="scrolling-text-container overflow-hidden whitespace-nowrap">
                 <motion.h2 style={{ x: x1 }} className="text-[10vw] font-bold uppercase opacity-20 whitespace-nowrap leading-none">
