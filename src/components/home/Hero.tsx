@@ -29,7 +29,7 @@ export default function Hero() {
             {/* Background */}
             <div className="absolute inset-0 z-0 opacity-20">
                 <Image
-                    src="/assets/hero-noise.jpg"
+                    src="/dopamine_cutter_landing/assets/hero-noise.jpg"
                     alt="Static Noise"
                     fill
                     className="object-cover grayscale brightness-50"
