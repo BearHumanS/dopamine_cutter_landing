@@ -32,65 +32,19 @@ h3,
   font-family: var(--font-display);
 }
 
-/* Noise Overlay */
-.noise-overlay {
+/* Background Gradient Mesh */
+.bg-gradient-mesh {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
   pointer-events: none;
-  z-index: 9999;
-  opacity: 0.15;
-  background: url('/dopamine_cutter_landing/assets/noise.svg');
-  animation: noise 0.2s infinite;
-  mix-blend-mode: overlay;
-}
-
-@keyframes noise {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(-5%, -5%);
-  }
-
-  20% {
-    transform: translate(-10%, 5%);
-  }
-
-  30% {
-    transform: translate(5%, -10%);
-  }
-
-  40% {
-    transform: translate(-5%, 15%);
-  }
-
-  50% {
-    transform: translate(-10%, 5%);
-  }
-
-  60% {
-    transform: translate(15%, 0);
-  }
-
-  70% {
-    transform: translate(0, 10%);
-  }
-
-  80% {
-    transform: translate(-15%, 0);
-  }
-
-  90% {
-    transform: translate(10%, 5%);
-  }
-
-  100% {
-    transform: translate(5%, 0);
-  }
+  background:
+    radial-gradient(circle at 15% 50%, rgba(204, 255, 0, 0.03), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(20, 20, 20, 1), transparent 25%);
+  filter: blur(60px);
 }
 
 /* Custom Cursor */

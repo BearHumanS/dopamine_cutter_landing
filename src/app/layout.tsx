@@ -109,6 +109,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className="antialiased selection:bg-[#ccff00] selection:text-black">
+        <div className="bg-gradient-mesh" />
         <MantineProvider theme={theme} defaultColorScheme="dark">
           {children}
         </MantineProvider>

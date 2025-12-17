@@ -16,10 +16,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         const browserLang = navigator.language.split('-')[0];
         if (browserLang === 'ko') {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguage('ko');
         } else {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
             setLanguage('en');
         }
     }, []);

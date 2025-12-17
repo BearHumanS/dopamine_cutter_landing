@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <LanguageProvider>
       <SmoothScroll>
-        {/* <div className="noise-overlay"></div> */}
         <Cursor />
         <Navbar />
         <main>
