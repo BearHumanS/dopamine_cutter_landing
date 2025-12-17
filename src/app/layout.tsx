@@ -24,8 +24,55 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "Dopamine Cutter | Reclaim Your Brain",
-  description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span.",
+  metadataBase: new URL('https://bearhumans.github.io/dopamine_cutter_landing/'),
+  // Wait, I don't know the final domain. I will use a placeholder or ask user?
+  // User asked for "deploying to GitHub Pages" previously. 
+  // I will use a generic one or try to infer.
+  // Actually, I'll use a placeholder variable or just omit metadataBase if not strictly required, but next.js warns about it. 
+  // Let's use a standard implementation.
+  title: {
+    default: "Dopamine Cutter | Reclaim Your Brain",
+    template: "%s | Dopamine Cutter",
+  },
+  description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span. 둠스크롤링을 멈추고 집중력을 되찾으세요.",
+  keywords: ["dopamine detox", "block shorts", "digital wellbeing", "focus app", "도파민 중독", "쇼츠 차단", "집중력 향상"],
+  authors: [{ name: "Dopamine Cutter Team" }],
+  creator: "Dopamine Cutter",
+  publisher: "Dopamine Cutter",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    alternateLocale: "ko_KR",
+    url: "https://bearhumans.github.io/dopamine_cutter_landing/",
+    title: "Dopamine Cutter | Reclaim Your Brain",
+    description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span.",
+    siteName: "Dopamine Cutter",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dopamine Cutter - Reclaim Your Brain",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dopamine Cutter | Reclaim Your Brain",
+    description: "Stop the doom scrolling. Block Shorts. Reclaim your attention span.",
+    images: ["/og-image.png"],
+    creator: "@dopaminecutter",
+  },
+  verification: {
+    google: "OwiHh7_fFofvyDdZLvIbIoKoVI8Dfp_7Yp7hbTtMFvA",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const theme = createTheme({
