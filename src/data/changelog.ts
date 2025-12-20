@@ -14,6 +14,44 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.1.7",
+        date: "2025-12-20",
+        title: {
+            en: "Statistics Page Hotfix",
+            ko: "통계 페이지 긴급 수정"
+        },
+        description: {
+            en: [
+                "Fixed Stats Page Loading: Resolved an internal variable name conflict that caused infinite loading.",
+                "You can now view your focus records normally."
+            ],
+            ko: [
+                "통계 페이지 로딩 오류 수정: 내부 변수명 충돌로 인해 통계 페이지가 열리지 않던 문제를 수정했습니다.",
+                "이제 정상적으로 집중 기록을 확인할 수 있습니다."
+            ]
+        },
+        type: "fix"
+    },
+    {
+        version: "v1.1.6",
+        date: "2025-12-19",
+        title: {
+            en: "Enhanced Focus & Content",
+            ko: "더 강력해진 집중과 풍부한 명언"
+        },
+        description: {
+            en: [
+                "Expanded Coverage: Now identifies and replaces Shorts hidden within search results.",
+                "More Wisdom: Added over 200 new quotes to keep you motivated."
+            ],
+            ko: [
+                "커버리지 확장: 검색 결과에 숨어있는 쇼츠까지 찾아내어 명언으로 대체합니다.",
+                "풍부해진 명언: 200개 이상의 새로운 명언을 추가하여 동기 부여를 강화했습니다."
+            ]
+        },
+        type: "improvement"
+    },
+    {
         version: "v1.1.5",
         date: "2025-12-18",
         title: {
