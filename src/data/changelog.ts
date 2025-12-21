@@ -14,6 +14,46 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.1.9",
+        date: "2025-12-20",
+        title: {
+            en: "Gamification & Stats",
+            ko: "게이미피케이션 & 통계"
+        },
+        description: {
+            en: [
+                "Gamified Dashboard: Instantly see 'Shorts Blocked Today' via the popup badge and track lifetime stats.",
+                "Enhanced Counting Logic: Now counts every individual short removed (e.g., +4 for a shelf) for more satisfying feedback."
+            ],
+            ko: [
+                "차단 대시보드: 팝업 배지로 '오늘 방어한 숏츠'를 확인하고, 통계 메뉴에서 누적 차단 횟수를 볼 수 있습니다.",
+                "강력해진 카운팅: 단순 횟수가 아닌 실제 제거된 쇼츠 영상 개수를 모두 카운트하여 차단하는 맛을 더했습니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
+        version: "v1.1.8",
+        date: "2025-12-20",
+        title: {
+            en: "Smart Review Requests",
+            ko: "스마트 리뷰 요청 시스템"
+        },
+        description: {
+            en: [
+                "Smart Review System: A non-intrusive way to gather feedback from engaged users.",
+                "Optimized Performance: Improved logic for tracking blocked content without affecting browsing speed.",
+                "Enhanced Privacy: All tracking data is stored locally on your device."
+            ],
+            ko: [
+                "스마트 리뷰 시스템: 참여도가 높은 사용자에게만 방해되지 않는 방식으로 피드백을 요청합니다.",
+                "성능 최적화: 브라우징 속도에 영향을 주지 않도록 차단 로직을 개선했습니다.",
+                "프라이버시 강화: 모든 데이터는 사용자 기기에만 로컬로 저장됩니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.1.7",
         date: "2025-12-20",
         title: {
