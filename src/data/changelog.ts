@@ -14,6 +14,29 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.2.0",
+        date: "2025-12-23",
+        title: {
+            en: "Data-Driven Insights",
+            ko: "데이터 기반 인사이트"
+        },
+        description: {
+            en: [
+                "Data-Driven Insights: Analyze focus patterns and convert saved time into tangible value (books read, movies watched, potential earnings).",
+                "Enhanced Stats UI: Improved readability with a new 'Insights' card design.",
+                "Privacy-First: All analysis happens locally on your device; no data leaves your browser.",
+                "Bug Fixes: Resolved infinite loading states and fixed English localization issues."
+            ],
+            ko: [
+                "데이터 기반 인사이트: 집중력 패턴을 분석하고 절약한 시간을 가치(책, 영화, 수익)로 환산하여 보여줍니다.",
+                "통계 UI 강화: 가독성을 높인 새로운 '인사이트' 카드 디자인을 적용했습니다.",
+                "프라이버시 우선: 모든 분석은 기기 내부에서만 이루어지며 외부 서버로 전송되지 않습니다.",
+                "버그 수정: 인사이트 무한 로딩 문제 및 다국어 표시 오류를 해결했습니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.1.9",
         date: "2025-12-20",
         title: {
