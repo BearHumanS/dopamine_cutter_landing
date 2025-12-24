@@ -14,6 +14,31 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.2.1",
+        date: "2025-12-24",
+        title: {
+            en: "Cleaner Tabbed Interface",
+            ko: "탭으로 더 깔끔해진 팝업"
+        },
+        description: {
+            en: [
+                "Tabbed Interface: Separated Settings and Pomodoro Timer into distinct tabs for a cleaner, scroll-free experience.",
+                "Pomodoro + Deep Focus Sync: Starting a focus session automatically enables Deep Focus (pauses & mutes videos).",
+                "Premium Features: Pomodoro Timer and Statistics are now available after logging in.",
+                "Improvements: Real-time setting updates, Smart Lock (prevents starting without active settings), and improved multilingual layout.",
+                "Bug Fixes: Fixed Deep Focus overlay not resetting and corrected English login guide messages."
+            ],
+            ko: [
+                "탭 인터페이스: 설정과 뽀모도로 타이머가 탭으로 분리되어 스크롤 없이 한눈에 확인할 수 있습니다.",
+                "뽀모도로 + 딥 포커스 연동: 집중 세션을 시작하면 자동으로 완전 차단 모드가 켜지고 영상이 일시정지됩니다.",
+                "프리미엄 기능: 뽀모도로 타이머와 통계 기능은 로그인 후 이용할 수 있습니다.",
+                "개선 사항: 설정 실시간 반영, 스마트 잠금(설정 미선택 시 시작 버튼 비활성화), 다국어 레이아웃 개선.",
+                "버그 수정: 리셋 후 오버레이 해제 문제 및 영어 로그인 안내 메시지를 수정했습니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.2.0",
         date: "2025-12-23",
         title: {
