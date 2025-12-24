@@ -14,6 +14,50 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.2.3",
+        date: "2025-12-24",
+        title: {
+            en: "Pomodoro Blocking Options Fix",
+            ko: "뽀모도로 차단 옵션 수정"
+        },
+        description: {
+            en: [
+                "Fixed: Pomodoro timer now correctly applies your selected blocking options instead of always enabling Deep Focus Mode.",
+                "Deep Focus (Recommended): Shows overlay blocking all content.",
+                "Hide Feed: Only hides the home feed, videos remain watchable.",
+                "Block Shorts: Only blocks Shorts, videos remain watchable."
+            ],
+            ko: [
+                "수정: 뽀모도로 타이머가 이제 사용자가 선택한 차단 옵션을 정확히 적용합니다 (항상 완전 차단이 되던 문제 해결).",
+                "완전 차단 (추천): Deep Focus 오버레이가 표시됩니다.",
+                "피드 숨김: 홈 피드만 숨기고 영상은 시청 가능합니다.",
+                "쇼츠 차단: Shorts만 차단하고 영상은 시청 가능합니다."
+            ]
+        },
+        type: "fix"
+    },
+    {
+        version: "v1.2.2",
+        date: "2025-12-24",
+        title: {
+            en: "Fast Switching & Cutter Tab",
+            ko: "패스트 스위칭 & 커터 탭"
+        },
+        description: {
+            en: [
+                "Cutter Tab: 'Settings' is now 'Cutter' — just toggle the switches to cut dopamine instantly. Use the Pomodoro tab when you need a timer.",
+                "Fast Switching: No more 'Start Focus' button! All settings now apply in 0.1 seconds when toggled.",
+                "Bug Fixes: Fixed login popups persisting after sign-in and resolved conflicts between manual lock and Pomodoro timer."
+            ],
+            ko: [
+                "커터 탭: '설정'이 '커터'로 변경되었습니다. 토글만 켜면 즉시 도파민을 차단합니다. 타이머가 필요하면 뽀모도로 탭을 이용하세요.",
+                "패스트 스위칭: '집중 시작' 버튼 없이 모든 설정이 토글 즉시 0.1초 만에 적용됩니다.",
+                "버그 수정: 로그인 후 안내 팝업이 사라지지 않던 문제와 수동 잠금-뽀모도로 타이머 충돌 문제를 해결했습니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.2.1",
         date: "2025-12-24",
         title: {
