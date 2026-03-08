@@ -14,6 +14,33 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.3.0",
+        date: "2026-03-08",
+        title: {
+            en: "Whitelist, Gamification & Code Overhaul",
+            ko: "화이트리스트, 게이미피케이션 & 코드 대개편"
+        },
+        description: {
+            en: [
+                "Whitelist: Register specific channel names or keywords to exclude them from Shorts blocking. Shelf-level whitelist support included.",
+                "Gamification: Earn XP by staying focused and climb tiers from Bronze to Master. Track your streaks and level up!",
+                "Keyboard Shortcut: Press Alt+Shift+F to quickly toggle Deep Focus mode.",
+                "Data Export: Download your focus records as CSV from the Statistics page.",
+                "Review Prompt Fix: The review request modal now actually appears (was broken before). Shows every 3 days until you leave a review.",
+                "Code Overhaul: Split popup.js (1,350 lines) into 4 clean modules for better stability and performance."
+            ],
+            ko: [
+                "화이트리스트: 특정 채널명/키워드를 등록하면 쇼츠 차단에서 제외됩니다. 쉘프 단위도 지원합니다.",
+                "게이미피케이션: 집중할수록 XP를 획득하고 Bronze → Master까지 티어가 올라갑니다. 스트릭과 레벨업으로 동기부여!",
+                "키보드 단축키: Alt+Shift+F로 완전 차단 모드를 빠르게 토글할 수 있습니다.",
+                "데이터 내보내기: 통계 페이지에서 집중 기록을 CSV로 다운로드할 수 있습니다.",
+                "리뷰 요청 수정: 리뷰 요청 모달이 실제로 표시되지 않던 문제를 수정했습니다. 평가하지 않으면 3일마다 다시 표시됩니다.",
+                "코드 대개편: popup.js(1,350줄)를 4개 모듈로 분리하여 안정성과 성능을 높였습니다."
+            ]
+        },
+        type: "feature"
+    },
+    {
         version: "v1.2.3",
         date: "2025-12-24",
         title: {
