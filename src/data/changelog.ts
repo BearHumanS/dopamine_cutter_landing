@@ -27,6 +27,8 @@ export const changelogData: ChangelogEntry[] = [
                 "Keyboard Shortcut: Press Alt+Shift+F to quickly toggle Deep Focus mode.",
                 "Data Export: Download your focus records as CSV from the Statistics page.",
                 "Review Prompt Fix: The review request modal now actually appears (was broken before). Shows every 3 days until you leave a review.",
+                "Deep Focus Overlay: Improved from plain black screen to gradient background with clear status message and instructions on how to return.",
+                "Login Fix: Fixed login button not responding due to script loading order.",
                 "Code Overhaul: Split popup.js (1,350 lines) into 4 clean modules for better stability and performance."
             ],
             ko: [
@@ -35,6 +37,8 @@ export const changelogData: ChangelogEntry[] = [
                 "키보드 단축키: Alt+Shift+F로 완전 차단 모드를 빠르게 토글할 수 있습니다.",
                 "데이터 내보내기: 통계 페이지에서 집중 기록을 CSV로 다운로드할 수 있습니다.",
                 "리뷰 요청 수정: 리뷰 요청 모달이 실제로 표시되지 않던 문제를 수정했습니다. 평가하지 않으면 3일마다 다시 표시됩니다.",
+                "완전 차단 오버레이 개선: 검은 화면 → 그라데이션 배경 + 차단 안내 문구 + 해제 방법 표시.",
+                "로그인 버그 수정: 팝업에서 로그인 버튼이 동작하지 않던 문제를 수정했습니다.",
                 "코드 대개편: popup.js(1,350줄)를 4개 모듈로 분리하여 안정성과 성능을 높였습니다."
             ]
         },
