@@ -14,8 +14,8 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
-        version: "v1.3.0",
-        date: "2026-03-08",
+        version: "v1.3.1",
+        date: "2026-03-11",
         title: {
             en: "Whitelist, Gamification & Code Overhaul",
             ko: "화이트리스트, 게이미피케이션 & 코드 대개편"
