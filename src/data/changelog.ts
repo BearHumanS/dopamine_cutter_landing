@@ -14,6 +14,29 @@ export interface ChangelogEntry {
 
 export const changelogData: ChangelogEntry[] = [
     {
+        version: "v1.3.2",
+        date: "2026-03-11",
+        title: {
+            en: "Overlay & Last Video Fix",
+            ko: "오버레이 & 이것만 보기 수정"
+        },
+        description: {
+            en: [
+                "Overlay Rendering Fix: Fixed Deep Focus overlay staying invisible due to CSS animation failure.",
+                "Last Video Button Fix: Fixed button not rendering due to YouTube DOM changes.",
+                "Guest Last Video: Non-logged-in users now get manual block mode instead of timer after video ends.",
+                "Smart Hint: Overlay now shows different instructions for timer mode vs manual mode."
+            ],
+            ko: [
+                "오버레이 렌더링 수정: CSS 애니메이션 미작동으로 오버레이가 보이지 않던 문제를 수정했습니다.",
+                "이것만 보기 버튼 수정: YouTube DOM 변경으로 버튼이 표시되지 않던 문제를 수정했습니다.",
+                "비회원 이것만 보기: 비로그인 상태에서는 타이머 없이 수동 차단 모드만 활성화됩니다.",
+                "안내 문구 분기: 타이머 중/수동 모드에 따라 다른 안내 문구를 표시합니다."
+            ]
+        },
+        type: "fix"
+    },
+    {
         version: "v1.3.1",
         date: "2026-03-11",
         title: {
